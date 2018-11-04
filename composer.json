@@ -1,7 +1,22 @@
+
 {
-  "name": "$package_name$",
-  "version": "0.0.1",
-  "dependencies": {
-    $END$
+  "name": "abushamleh/yii2-toast",
+  "description": "Yii2 toast alert",
+  "keywords": ["yii2", "toast alert", "ajax alert", "Pjax alert", "yii2-toast", "Abdelhadi Abu-Shamleh"],
+  "type": "yii2-extension",
+  "authors": [
+    {
+      "name": "Abdelhadi Abu-Shamleh",
+      "email": "abushamleh92@gmail.com"
+    }
+  ],
+  "require": {
+    "yiisoft/yii2": "~2.0"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "abushamleh\\toast\\": ""
+    }
   }
 }

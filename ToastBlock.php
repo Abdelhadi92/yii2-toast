@@ -1,5 +1,5 @@
 <?php
-namespace abushamleh\toastAlert;
+namespace abushamleh\toast;
 
 use Yii;
 use yii\base\Widget;
@@ -23,7 +23,7 @@ use yii\helpers\ArrayHelper;
  * ```
  *
  */
-class ToastAlert extends Widget
+class ToastBlock extends Widget
 {
     public $options = [];
 
@@ -57,7 +57,7 @@ class ToastAlert extends Widget
                     $text = $message;
                 }
 
-                echo Toast::widget([
+                echo ToastAlert::widget([
                     'options'   => $this->options,
                     'heading'   => $heading,
                     'text'      => $text,

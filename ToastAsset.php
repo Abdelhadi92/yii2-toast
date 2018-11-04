@@ -1,12 +1,12 @@
 <?php
-namespace common\widgets\toastrAlert;
+namespace abushamleh\toast;
 
 use yii\web\AssetBundle;
 
 /**
- * Asset Bundle of the Toastr widget. Registers required CSS and JS files.
+ * Asset Bundle of the Toast widget. Registers required CSS and JS files.
  */
-class ToastrAsset extends AssetBundle
+class ToastAsset extends AssetBundle
 {
 
     /**

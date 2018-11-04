@@ -1,5 +1,5 @@
 <?php
-namespace abushamleh\toastAlert;
+namespace abushamleh\toast;
 
 use yii\base\Widget;
 use yii\helpers\Json;
@@ -7,7 +7,7 @@ use yii\helpers\Json;
 /**
  * Widget of the toast item
  */
-class Toast extends Widget
+class ToastAlert extends Widget
 {
     public $options = [];
     public $heading;
