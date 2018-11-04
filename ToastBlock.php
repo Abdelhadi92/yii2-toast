@@ -50,8 +50,8 @@ class ToastBlock extends Widget
 
             foreach ((array) $flash as $i => $message) {
                 if(is_array($message)){
-                    $heading = ArrayHelper::getValue($message, 'title');
-                    $text = ArrayHelper::getValue($message, 'body');
+                    $heading = ArrayHelper::getValue($message, 'heading');
+                    $text = ArrayHelper::getValue($message, 'text');
                 }else{
                     $heading = null;
                     $text = $message;

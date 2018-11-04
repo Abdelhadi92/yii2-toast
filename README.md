@@ -30,9 +30,11 @@ use abushamleh\toast\ToastBlock;
  Yii::$app->session->setFlash('error', 'This is the message');
  Yii::$app->session->setFlash('success', 'This is the message');
  Yii::$app->session->setFlash('info', 'This is the message');
+ Yii::$app->session->setFlash('info', ['heading' => 'Message title' 'text' => 'This is the message']);
 
 //Multiple messages could be set as follows:
  Yii::$app->session->setFlash('error', ['Error 1', 'Error 2']);
+ Yii::$app->session->setFlash('error', [['heading' => 'Message title' 'text' => 'This is the message'], 'Error 2']);
 
 echo ToastBlock::widget([
     'options' => []
